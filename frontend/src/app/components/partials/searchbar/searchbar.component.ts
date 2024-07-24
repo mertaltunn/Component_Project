@@ -8,7 +8,7 @@ import { ComponentModel } from 'src/app/shared/models/ComponentModel';
 })
 export class SearchbarComponent implements OnInit {
 
-  componentM:ComponentModel[] = []
+
  
   ngOnInit(): void {}
 }

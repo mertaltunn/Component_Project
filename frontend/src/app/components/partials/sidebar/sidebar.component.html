@@ -1,8 +1,13 @@
-<div class="d-flex flex-column p-3 bg-light" style="width: 250px; height: 100vh;">
-  <h4>Components</h4>
+<div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 250px; height: 100vh; border-right: 1px solid #ddd;">
+  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+    <span class="fs-4 fw-bold">Components</span>
+  </a>
+  <hr>
   <ul class="nav nav-pills flex-column mb-auto">
     <li *ngFor="let component of componentM" class="nav-item">
-      <a class="nav-link" [routerLink]="['/component', component.id]" routerLinkActive="active">{{ component.name }}</a>
+      <a class="nav-link d-flex align-items-center link-dark" [routerLink]="['/component', component.id]" routerLinkActive="active">
+        <span class="ms-2">{{ component.name }}</span>
+      </a>
     </li>
   </ul>
 </div>

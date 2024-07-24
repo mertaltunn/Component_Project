@@ -6,4 +6,14 @@ export const sample_components: ComponentModel[] = [
     name: 'searchbar',
     description: 'lorem',
   },
+  {
+    id:'2',
+    name:'button',
+    description:'double lorem'
+  },
+  {
+  id:'3',
+  name:'tooltip',
+  description:'asdasd'
+  }
 ];
