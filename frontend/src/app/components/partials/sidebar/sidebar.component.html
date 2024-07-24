@@ -6,7 +6,9 @@
   <ul class="nav nav-pills flex-column mb-auto">
     <li *ngFor="let component of componentM" class="nav-item">
       <a class="nav-link d-flex align-items-center link-dark" [routerLink]="['/component', component.id]" routerLinkActive="active">
-        <span class="ms-2">{{ component.name }}</span>
+        <i class="bi bi-box ms-2"></i> <!-- Bootstrap icon -->
+        <span class="ms-3">{{ component.name }}</span>
+        <span class="badge bg-primary ms-auto">New</span> <!-- Example badge -->
       </a>
     </li>
   </ul>

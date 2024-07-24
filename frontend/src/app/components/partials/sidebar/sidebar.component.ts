@@ -21,6 +21,8 @@ export class SidebarComponent implements OnInit {
   randerOnEvent(event: any) {
     this.componentM = this.unfilteredComp
 
-    this.componentM = this.componentM
+    this.componentM = this.componentM.filter((component:ComponentModel)=>{
+      
+    })
   }
 }
