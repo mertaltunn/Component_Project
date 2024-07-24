@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { ComponentModel } from './shared/models/ComponentModel';
+import { SidebarComponent } from './components/partials/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'frontend';
+  @ViewChild(SidebarComponent) sidebar!: SidebarComponent;
+
+  get selectedComponent(): ComponentModel | null {
+    return this.sidebar ? this.sidebar.selectedComponent : null;
+  }
 }

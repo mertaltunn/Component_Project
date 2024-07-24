@@ -12,6 +12,7 @@ import { ComponentDetailComponent } from './components/partials/component-detail
   declarations: [
     AppComponent,
     SidebarComponent,
+    SearchbarComponent,
     HomeComponent,
     SearchbarComponent,
     ComponentDetailComponent
