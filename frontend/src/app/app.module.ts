@@ -7,6 +7,9 @@ import { SidebarComponent } from './components/partials/sidebar/sidebar.componen
 import { HomeComponent } from './components/pages/home/home.component';
 import { SearchbarComponent } from './components/partials/searchbar/searchbar.component';
 import { ComponentDetailComponent } from './components/partials/component-details/component-details.component';
+import { CommonModule } from '@angular/common';
+import { ModalComponent } from './components/partials/modal/modal.component';
+import { TooltipComponent } from './components/partials/tooltip/tooltip.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +18,15 @@ import { ComponentDetailComponent } from './components/partials/component-detail
     SearchbarComponent,
     HomeComponent,
     SearchbarComponent,
-    ComponentDetailComponent
+    ComponentDetailComponent,
+    ModalComponent,
+    TooltipComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

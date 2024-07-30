@@ -5,10 +5,7 @@
   <hr>
   <ul class="nav nav-pills flex-column mb-auto">
     <li *ngFor="let component of componentM" class="nav-item">
-      <a class="nav-link d-flex align-items-center link-dark" 
-         [routerLink]="['/component', component.id]" 
-         routerLinkActive="active" 
-         (click)="selectComponent(component)">
+      <a class="nav-link d-flex align-items-center link-dark" (click)="selectComponent(component)">
         <i class="bi" [ngClass]="component.icon"></i>
         <span class="ms-2">{{ component.name }}</span>
       </a>

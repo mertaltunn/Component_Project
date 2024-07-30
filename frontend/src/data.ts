@@ -2,7 +2,7 @@ import { ComponentModel } from "./app/shared/models/ComponentModel";
 
 export const sample_components: ComponentModel[] = [
   {
-    id: '1',
+    id: '0',
     name: 'Search Bar',
     icon: 'bi-search',
     animation: 'animate__animated animate__fadeIn',
@@ -10,7 +10,7 @@ export const sample_components: ComponentModel[] = [
     code: `<input type="text" class="form-control" placeholder="Search...">`
   },
   {
-    id: '2',
+    id: '1',
     name: 'Tooltip',
     icon: 'bi-info-circle',
     animation: 'animate__animated animate__fadeIn',
@@ -18,7 +18,7 @@ export const sample_components: ComponentModel[] = [
     code: `<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip text">Hover me</button>`
   },
   {
-    id: '3',
+    id: '2',
     name: 'Modal',
     icon: 'bi-window',
     animation: 'animate__animated animate__fadeIn',
